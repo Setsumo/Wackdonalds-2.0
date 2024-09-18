@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Portal</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Wackdonalds Employee Portal</h1>
+    </header>
+
+    <section id="image-map-section">
+        <h2>Wackdonalds Global Presence</h2>
+        <p>Click on the highlighted circles to learn more about our international locations:</p>
+        <img src="Pics/Wackdonaldslocations.jpg" usemap="#wackdonaldsmap" alt="Wackdonalds Global Locations" width="600" height="800">
+        <map name="wackdonaldsmap">
+
+            <area shape="circle" coords="150,140,40" href="https://www.mcdonalds.com/us/en-us.html" alt="USA Locations" target="_blank">
+
+            <area shape="circle" coords="370,100,30" href="https://www.mcdonalds.com/us/en-us.html" alt="Europe Locations" target="_blank">
+
+            <area shape="circle" coords="230,320,30" href="https://www.mcdonalds.com/us/en-us.html" alt="Brazil Locations" target="_blank">
+
+            <area shape="circle" coords="600,160,40" href="https://www.mcdonalds.com/us/en-us.html" alt="China Locations" target="_blank">
+
+            <area shape="circle" coords="690,420,30" href="https://www.mcdonalds.com/us/en-us.html" alt="Australia Locations" target="_blank">
+
+            <area shape="circle" coords="520,260,30" href="https://www.mcdonalds.com/us/en-us.html" alt="India Locations" target="_blank">
+
+            <area shape="circle" coords="470,380,25" href="https://www.mcdonalds.com/us/en-us.html" alt="South Africa Locations" target="_blank">
+        </map>
+    </section>
+
+    
+    <section id="form-section">
+        <h2>Employee Contact Form</h2>
+        <form action="submit_form.php" method="post">
+            <label for="employee_name">Employee Name:</label><br>
+            <input type="text" id="employee_name" name="employee_name" required><br><br>
+
+            <label for="employee_id">Employee ID:</label><br>
+            <input type="text" id="employee_id" name="employee_id" required><br><br>
+
+            <label>Department:</label><br>
+            <input type="radio" id="hr" name="department" value="HR">
+
+            <label for="hr">HR</label><br>
+            <input type="radio" id="it" name="department" value="IT">
+
+            <label for="it">IT</label><br>
+            <input type="radio" id="sales" name="department" value="Sales">
+
+            <label for="sales">Sales</label><br><br>
+
+            <label for="start_date">Start Date:</label><br>
+            <input type="date" id="start_date" name="start_date" required><br><br>
+
+            <label for="office_location">Office Location:</label><br>
+            <select id="office_location" name="office_location">
+
+                <option value="ny">New York</option>
+
+                <option value="la">Los Angeles</option>
+
+                <option value="london">London</option>
+
+                <option value="paris">Paris</option>
+                
+                <option value="tokyo">Tokyo</option>
+            </select><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+    <!-- Table Section -->
+    <section id="table-section">
+        <h2>Employee Work Schedule</h2>
+        <table>
+            <caption>Weekly Employee Task Schedule</caption>
+            <colgroup>
+                <col span="1" style="background-color: #f2f2f2;">
+                <col span="7" style="background-color: #e6e6e6;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Details</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Employee</td>
+                    <td>John Doe</td>
+                    <td>Jane Smith</td>
+                    <td>Michael Brown</td>
+                    <td>Emma Wilson</td>
+                    <td>Olivia Johnson</td>
+                    <td>Sophia Martinez</td>
+                    <td>James Anderson</td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>HR</td>
+                    <td>IT</td>
+                    <td>Sales</td>
+                    <td>Marketing</td>
+                    <td>Finance</td>
+                    <td>Support</td>
+                    <td>Admin</td>
+                </tr>
+                
+                <tr>
+                    <td>Location</td>
+                    <td>New York</td>
+                    <td>Los Angeles</td>
+                    <td>London</td>
+                    <td>Paris</td>
+                    <td>Tokyo</td>
+                    <td>Berlin</td>
+                    <td>Sydney</td>
+                </tr>
+                <tr>
+                    <td>Notes</td>
+                    <td>Project Meeting</td>
+                    <td>Client Call</td>
+                    <td>Training</td>
+                    <td>Marketing</td>
+                    <td>Budgeting</td>
+                    <td>System updating</td>
+                    <td>Maintenance</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">*Schedules could change</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+</body>
+</html>

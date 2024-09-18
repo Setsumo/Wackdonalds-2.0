@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; 
+}
+
+header h1 {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: blue; 
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+h2 {
+    color: #333;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid blue;
+    padding: 8px;
+}
+
+thead {
+    background-color: orange;
+}
+
+tfoot {
+    background-color: white;
+    font-weight: bold;
+}
+
+colgroup col {
+    border-right: 2px solid green;
+}
